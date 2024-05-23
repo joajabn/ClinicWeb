@@ -1,0 +1,24 @@
+<div class="wrapper">
+
+    <main>
+        <h4>Doctors List</h4>
+        <hr>
+
+        <ul>
+    
+            <li *ngFor="let doctor of $doctors | async">
+
+                <div class="details">
+                    <span>ID: {{doctor.id}}</span>
+                    <span>Title: {{doctor.title}}</span>
+                    <span>Name: {{doctor.name}}</span>
+                    <span>Surname: {{doctor.surname}}</span>
+                    <span>Phone number: {{doctor.phoneNumber}}</span>
+                    <span>Description: {{doctor.description}}</span>
+                </div>
+            </li>
+
+        </ul>
+    </main>
+
+</div>

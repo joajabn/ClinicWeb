@@ -1,0 +1,35 @@
+<div class="wrapper">
+
+    <div id="container-login">
+        <div id="title">
+            <i class="material-icons lock">lock</i> Login
+        </div>
+
+        <form (submit)="onSubmit()" [formGroup]="loginForm">
+
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">face</i>
+                </div>
+                <input type="text" placeholder="Username" formControlName="username" required autocomplete="on">
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">vpn_key</i>
+                </div>
+                <input type="password" placeholder="Password" formControlName="password" required autocomplete="off">
+            </div>
+
+            <input type="submit" value="Log In" />
+        </form>
+
+
+        <div class="register">
+            Don't have an account yet?
+            <a routerLink="/signup"><button id="register-link">Register here</button></a>
+        </div>
+    </div>
+</div>
